@@ -1,12 +1,12 @@
 # nuxt-movie-app
 
-## Build Setup
+## Para correr la app
 
 ```bash
-# install dependencies
+# Instalar dependencias
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Corre la app en localhost:3000
 $ npm run dev
 
 # build for production and launch server
