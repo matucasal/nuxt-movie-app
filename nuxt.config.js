@@ -33,7 +33,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     ['@nuxtjs/eslint-module', {
-      fix: true
+      //fix: true
     }]
   ],
 
