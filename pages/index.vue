@@ -118,6 +118,11 @@ export default {
       searchInput: ''
     }
   },
+  mounted (){
+    if (!this.$auth.$state.loggedIn)
+      this.$router.push('/login')
+  },
+
   async fetch () {
     if (this.searchInput === '') {
       await this.getMovies()
