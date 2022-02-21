@@ -46,7 +46,7 @@ export default {
     strategies:{
       'laravelSanctum':{
         provider: 'laravel/sanctum',
-        url:'http://localhost:8000',
+        url:'http://localhost:8090',
         endpoints:{
           login:{
             url:'/api/login',
