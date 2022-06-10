@@ -1,0 +1,18 @@
+
+@mixin flex($justify, $align, $direction){
+  display:flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+
+/*GLobal variables*/
+$header1: 1.5rem;
+$text: 0.5rem;
+$button-text: 1.5rem;
+$border-bottom-color: #E6E6E6;
+$background-color: #154353;
+$btn-background-color: #233142;
+$btn-special-color: #f95959;
+$gray-text: #2c2c2c;

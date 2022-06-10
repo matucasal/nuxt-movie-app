@@ -118,10 +118,6 @@ export default {
       searchInput: ''
     }
   },
-  mounted (){
-    if (!this.$auth.$state.loggedIn)
-      this.$router.push('/login')
-  },
 
   async fetch () {
     if (this.searchInput === '') {
@@ -149,11 +145,14 @@ export default {
       ]
     }
   },
-  fetchDelay: 1000,
   watch: {
     searchInput () {
     }
   },
+  mounted () {
+    if (!this.$auth.$state.loggedIn) { this.$router.push('/login') }
+  },
+  fetchDelay: 1000,
   methods: {
     async getMovies () {
       const data = axios.get(

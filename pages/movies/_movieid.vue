@@ -4,13 +4,15 @@
 
   <!-- single movie -->
   <div v-else class="container single-movie">
-    <NuxtLink class="button" :to="{name : 'index'}">Atrás</NuxtLink>
+    <NuxtLink class="button" :to="{name : 'index'}">
+      Atrás
+    </NuxtLink>
     <div class="movie-info">
       <div class="movie-img">
         <img
           :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`"
           alt=""
-        />
+        >
       </div>
       <div class="movie-content">
         <h1>{{ movie.title }}</h1>
@@ -39,7 +41,9 @@
             })
           }}
         </p>
-        <p class="movie-fact"><span>Overview:</span> {{ movie.overview }}</p>
+        <p class="movie-fact">
+          <span>Overview:</span> {{ movie.overview }}
+        </p>
       </div>
     </div>
   </div>

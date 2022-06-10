@@ -18,7 +18,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-      '@/assets/default.scss'
+    '@/assets/default.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -28,28 +28,26 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  
-
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    ['@nuxtjs/eslint-module', {
-      //fix: true
-    }]
+    /*['@nuxtjs/eslint-module', {
+      // fix: true
+    }]*/
   ],
 
   modules: [
     '@nuxtjs/auth-next',
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
   auth: {
     // Options
-    strategies:{
-      'laravelSanctum':{
+    strategies: {
+      laravelSanctum: {
         provider: 'laravel/sanctum',
-        url:'http://localhost:8090',
-        endpoints:{
-          login:{
-            url:'/api/login',
+        url: 'http://localhost:8090',
+        endpoints: {
+          login: {
+            url: '/api/login'
           }
         }
       }
@@ -58,5 +56,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    styleResources: {
+      scss: './assets/variables.scss'
+    }
   }
 }
